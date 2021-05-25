@@ -13,6 +13,8 @@ public interface clienteDAOLocal {
 	
 	void delete (cliente Cliente);
 	
-	List<cliente> filterByName(String solicitud);
+	List<cliente> getAll();
+	
+	List<cliente> filterByInt(int NumSolicitud);
 
 }

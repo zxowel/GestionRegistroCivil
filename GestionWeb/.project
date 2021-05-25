@@ -3,6 +3,7 @@
 	<name>GestionWeb</name>
 	<comment></comment>
 	<projects>
+		<project>GestionModel</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

@@ -39,9 +39,20 @@ public class clienteDAO implements clienteDAOLocal {
 	}
 
 	@Override
-	public List<cliente> filterByName(String solicitud) {
+	public List<cliente> getAll() {
 		// TODO Auto-generated method stub
-		return clientes.stream().filter(c->c.getSolicitud().contains(solicitud)).collect(Collectors.toList());
+		return clientes;
 	}
+
+	@Override
+	public List<cliente> filterByInt(int NumSolicitud) {
+		// TODO Auto-generated method stub
+		return clientes.stream().filter(c->c.getNumSolicitud().contains(NumSolicitud)).collect(Collectors.toList());
+	}
+
+
+
+
+	
 
 }

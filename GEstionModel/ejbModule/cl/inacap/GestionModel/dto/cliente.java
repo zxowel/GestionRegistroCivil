@@ -1,10 +1,15 @@
 package cl.inacap.GestionModel.dto;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class cliente {
+	private AtomicInteger NumSolicitud;
 	private String Rut;
 	private String Nombre;
 	private String solicitud;
 	
+	
+
 	public String getRut() {
 		return Rut;
 	}
@@ -23,5 +28,14 @@ public class cliente {
 	public void setSolicitud(String solicitud) {
 		this.solicitud = solicitud;
 	}
+	public AtomicInteger getNumSolicitud() {
+		return NumSolicitud;
+	}
+	public void setNumSolicitud(AtomicInteger numSolicitud) {
+		NumSolicitud = numSolicitud;
+	}
+
+
+
 	
 }
